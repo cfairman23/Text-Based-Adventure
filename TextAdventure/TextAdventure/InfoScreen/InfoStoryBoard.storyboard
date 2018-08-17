@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zP3-3Z-yVB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info ScreenVC-->
+        <scene sceneID="14Q-bA-b0q">
+            <objects>
+                <viewController storyboardIdentifier="InfoScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zP3-3Z-yVB" customClass="InfoScreenVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMP-Ho-dgr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qv-L1-uhw">
+                                <rect key="frame" x="98" y="62" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGQ-IJ-G4J">
+                                <rect key="frame" x="170" y="617" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="imL-JS-bIZ" kind="show" id="PXz-FB-cW2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h3s-SJ-ke0" firstAttribute="bottom" secondItem="WGQ-IJ-G4J" secondAttribute="bottom" constant="20" id="8mn-qr-eQF"/>
+                            <constraint firstItem="h3s-SJ-ke0" firstAttribute="trailing" secondItem="WGQ-IJ-G4J" secondAttribute="trailing" constant="171" id="Mfa-Kz-4Dy"/>
+                            <constraint firstItem="WGQ-IJ-G4J" firstAttribute="top" secondItem="6Qv-L1-uhw" secondAttribute="bottom" constant="534" id="ZcU-oz-9LG"/>
+                            <constraint firstItem="h3s-SJ-ke0" firstAttribute="bottom" secondItem="6Qv-L1-uhw" secondAttribute="bottom" constant="584" id="aoG-bl-wki"/>
+                            <constraint firstItem="WGQ-IJ-G4J" firstAttribute="leading" secondItem="h3s-SJ-ke0" secondAttribute="leading" constant="170" id="dvB-dg-HTP"/>
+                            <constraint firstItem="6Qv-L1-uhw" firstAttribute="leading" secondItem="h3s-SJ-ke0" secondAttribute="leading" constant="98" id="mjv-Et-AOF"/>
+                            <constraint firstItem="6Qv-L1-uhw" firstAttribute="top" secondItem="h3s-SJ-ke0" secondAttribute="top" constant="42" id="swr-ss-Tvv"/>
+                            <constraint firstItem="h3s-SJ-ke0" firstAttribute="trailing" secondItem="6Qv-L1-uhw" secondAttribute="trailing" constant="99" id="vNt-ac-wpw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h3s-SJ-ke0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZo-JP-UgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="158.77061469265368"/>
+        </scene>
+        <!--Page1VC-->
+        <scene sceneID="6kx-LP-kjB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chapter1" referencedIdentifier="Page1VC" id="imL-JS-bIZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTV-mh-zkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="158"/>
+        </scene>
+    </scenes>
+</document>

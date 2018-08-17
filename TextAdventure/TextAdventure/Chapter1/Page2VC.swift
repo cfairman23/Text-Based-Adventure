@@ -14,10 +14,11 @@ class Page2VC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let storyboard = self.storyboard?.value(forKey: "name") //get storyboard id
-        let newViewController = self.restorationIdentifier //get identifier of view controller
-        UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults
-        UserDefaults.standard.set(newViewController, forKey: "viewController")
+        
+        let sb = defaults.string(forKey: "storyBoard")
+        let vc = defaults.string(forKey: "viewController")
+        print(sb!)
+        print(vc!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +48,13 @@ class Page2VC: UIViewController {
         if let navigator = navigationController {
             navigator.pushViewController(newViewController, animated: true)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard = self.storyboard?.value(forKey: "name") //get storyboard id
+        let newViewController = self.restorationIdentifier //get identifier of view controller
+        UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults
+        UserDefaults.standard.set(newViewController, forKey: "viewController")
     }
     
 }

@@ -22,6 +22,11 @@
 		381AE261212652B8005FDBB7 /* EscapeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE260212652B8005FDBB7 /* EscapeVC.swift */; };
 		381AE2642126543B005FDBB7 /* LoseSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381AE2632126543B005FDBB7 /* LoseSB.storyboard */; };
 		381AE26621265484005FDBB7 /* WinSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381AE26521265484005FDBB7 /* WinSB.storyboard */; };
+		381AE269212749F6005FDBB7 /* HomeScreenAreYouSure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381AE268212749F5005FDBB7 /* HomeScreenAreYouSure.storyboard */; };
+		381AE26B21274A2D005FDBB7 /* AreYouSureStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE26A21274A2D005FDBB7 /* AreYouSureStartVC.swift */; };
+		381AE26F21274D42005FDBB7 /* Chapter1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381AE26E21274D42005FDBB7 /* Chapter1.storyboard */; };
+		387B7E4F212755FA0011908C /* InfoStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387B7E4E212755FA0011908C /* InfoStoryBoard.storyboard */; };
+		387B7E51212756260011908C /* InfoScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B7E50212756260011908C /* InfoScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		381AE260212652B8005FDBB7 /* EscapeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeVC.swift; sourceTree = "<group>"; };
 		381AE2632126543B005FDBB7 /* LoseSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoseSB.storyboard; sourceTree = "<group>"; };
 		381AE26521265484005FDBB7 /* WinSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WinSB.storyboard; sourceTree = "<group>"; };
+		381AE268212749F5005FDBB7 /* HomeScreenAreYouSure.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenAreYouSure.storyboard; sourceTree = "<group>"; };
+		381AE26A21274A2D005FDBB7 /* AreYouSureStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreYouSureStartVC.swift; sourceTree = "<group>"; };
+		381AE26E21274D42005FDBB7 /* Chapter1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter1.storyboard; sourceTree = "<group>"; };
+		387B7E4E212755FA0011908C /* InfoStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoStoryBoard.storyboard; sourceTree = "<group>"; };
+		387B7E50212756260011908C /* InfoScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +123,12 @@
 		381AE22421263EC5005FDBB7 /* TextAdventure */ = {
 			isa = PBXGroup;
 			children = (
+				387B7E4D212755DD0011908C /* InfoScreen */,
+				381AE26721274832005FDBB7 /* Popups */,
 				381AE26221265410005FDBB7 /* EndScreens */,
+				381AE26D21274CFE005FDBB7 /* HomeScreen */,
+				381AE26C21274CD1005FDBB7 /* Chapter1 */,
 				381AE22521263EC5005FDBB7 /* AppDelegate.swift */,
-				381AE22721263EC5005FDBB7 /* HomeScreenVC.swift */,
-				381AE22921263EC5005FDBB7 /* Main.storyboard */,
-				381AE2562126404E005FDBB7 /* Page1VC.swift */,
-				381AE25A21264C7F005FDBB7 /* Page2VC.swift */,
 				381AE260212652B8005FDBB7 /* EscapeVC.swift */,
 				381AE22F21263EC7005FDBB7 /* Assets.xcassets */,
 				381AE23121263EC7005FDBB7 /* LaunchScreen.storyboard */,
@@ -155,6 +165,43 @@
 				381AE25E2126501F005FDBB7 /* WinVC.swift */,
 			);
 			path = EndScreens;
+			sourceTree = "<group>";
+		};
+		381AE26721274832005FDBB7 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				381AE268212749F5005FDBB7 /* HomeScreenAreYouSure.storyboard */,
+				381AE26A21274A2D005FDBB7 /* AreYouSureStartVC.swift */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
+		381AE26C21274CD1005FDBB7 /* Chapter1 */ = {
+			isa = PBXGroup;
+			children = (
+				381AE25A21264C7F005FDBB7 /* Page2VC.swift */,
+				381AE2562126404E005FDBB7 /* Page1VC.swift */,
+				381AE26E21274D42005FDBB7 /* Chapter1.storyboard */,
+			);
+			path = Chapter1;
+			sourceTree = "<group>";
+		};
+		381AE26D21274CFE005FDBB7 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				381AE22921263EC5005FDBB7 /* Main.storyboard */,
+				381AE22721263EC5005FDBB7 /* HomeScreenVC.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		387B7E4D212755DD0011908C /* InfoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				387B7E4E212755FA0011908C /* InfoStoryBoard.storyboard */,
+				387B7E50212756260011908C /* InfoScreenVC.swift */,
+			);
+			path = InfoScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +311,9 @@
 				381AE2642126543B005FDBB7 /* LoseSB.storyboard in Resources */,
 				381AE23321263EC7005FDBB7 /* LaunchScreen.storyboard in Resources */,
 				381AE26621265484005FDBB7 /* WinSB.storyboard in Resources */,
+				381AE26F21274D42005FDBB7 /* Chapter1.storyboard in Resources */,
+				381AE269212749F6005FDBB7 /* HomeScreenAreYouSure.storyboard in Resources */,
+				387B7E4F212755FA0011908C /* InfoStoryBoard.storyboard in Resources */,
 				381AE23021263EC7005FDBB7 /* Assets.xcassets in Resources */,
 				381AE22B21263EC5005FDBB7 /* Main.storyboard in Resources */,
 			);
@@ -290,6 +340,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387B7E51212756260011908C /* InfoScreenVC.swift in Sources */,
+				381AE26B21274A2D005FDBB7 /* AreYouSureStartVC.swift in Sources */,
 				381AE22821263EC5005FDBB7 /* HomeScreenVC.swift in Sources */,
 				381AE22621263EC5005FDBB7 /* AppDelegate.swift in Sources */,
 				381AE25F2126501F005FDBB7 /* WinVC.swift in Sources */,

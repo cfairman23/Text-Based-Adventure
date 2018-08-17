@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JUl-b0-Mb1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Are You Sure StartVC-->
+        <scene sceneID="sf5-3f-xKw">
+            <objects>
+                <viewController storyboardIdentifier="AreYouSureStartVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JUl-b0-Mb1" customClass="AreYouSureStartVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="NIQ-a1-V9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bFQ-OB-lZp">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sj-Qq-ILr" userLabel="dismiss">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <state key="normal" title=" "/>
+                                    <connections>
+                                        <action selector="dismissPopup:" destination="JUl-b0-Mb1" eventType="touchUpInside" id="wxo-AS-XrD"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dft-W5-pfe">
+                                    <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you sure?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioa-7G-3Ft">
+                                            <rect key="frame" x="27" y="21" width="184" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aui-QQ-FqU">
+                                    <rect key="frame" x="141" y="317" width="30" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="Yes"/>
+                                    <connections>
+                                        <action selector="yesClicked:" destination="JUl-b0-Mb1" eventType="touchUpInside" id="u71-Kd-5zH"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vs-rC-n67">
+                                    <rect key="frame" x="200" y="317" width="30" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="No"/>
+                                    <connections>
+                                        <action selector="noClicked:" destination="JUl-b0-Mb1" eventType="touchUpInside" id="nuh-wj-XnO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Dft-W5-pfe" firstAttribute="centerX" secondItem="bFQ-OB-lZp" secondAttribute="centerX" id="4Fl-3U-RIV"/>
+                                <constraint firstItem="3vs-rC-n67" firstAttribute="leading" secondItem="Aui-QQ-FqU" secondAttribute="trailing" constant="29" id="67o-Oo-5KJ"/>
+                                <constraint firstItem="3vs-rC-n67" firstAttribute="baseline" secondItem="Aui-QQ-FqU" secondAttribute="baseline" id="6p2-Z6-KfG"/>
+                                <constraint firstAttribute="trailing" secondItem="5sj-Qq-ILr" secondAttribute="trailing" id="Bv9-Im-tVl"/>
+                                <constraint firstItem="Dft-W5-pfe" firstAttribute="leading" secondItem="bFQ-OB-lZp" secondAttribute="leading" constant="67" id="CQC-Vb-TZv"/>
+                                <constraint firstItem="Aui-QQ-FqU" firstAttribute="leading" secondItem="bFQ-OB-lZp" secondAttribute="leading" constant="141" id="LUf-wZ-cMQ"/>
+                                <constraint firstItem="Dft-W5-pfe" firstAttribute="centerY" secondItem="bFQ-OB-lZp" secondAttribute="centerY" id="Mma-4d-5xp"/>
+                                <constraint firstItem="5sj-Qq-ILr" firstAttribute="leading" secondItem="bFQ-OB-lZp" secondAttribute="leading" id="V9n-bn-dbN"/>
+                                <constraint firstAttribute="bottom" secondItem="5sj-Qq-ILr" secondAttribute="bottom" id="Wvx-bK-Ax7"/>
+                                <constraint firstItem="Aui-QQ-FqU" firstAttribute="centerY" secondItem="5sj-Qq-ILr" secondAttribute="centerY" id="cy9-Co-7yf"/>
+                                <constraint firstItem="5sj-Qq-ILr" firstAttribute="top" secondItem="bFQ-OB-lZp" secondAttribute="top" id="eb6-6M-6ee"/>
+                                <constraint firstItem="Dft-W5-pfe" firstAttribute="top" secondItem="bFQ-OB-lZp" secondAttribute="top" constant="213" id="oBv-cP-SSz"/>
+                            </constraints>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                    <connections>
+                        <outlet property="popupView" destination="Dft-W5-pfe" id="3bi-mX-uLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbh-BD-vKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>

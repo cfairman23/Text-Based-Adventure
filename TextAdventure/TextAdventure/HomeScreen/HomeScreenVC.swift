@@ -13,13 +13,22 @@ class HomeScreenVC: UIViewController {
     let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        
+        let sb = defaults.string(forKey: "storyBoard")
+        let vc = defaults.string(forKey: "viewController")
+        print(sb!)
+        print(vc!)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.startAdventure), name: Notification.Name("yesButtonClicked"), object: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("yesButtonClicked"), object: nil)
     }
     
     @IBAction func startButtonWasPressed(_ sender: Any) {
@@ -33,9 +42,13 @@ class HomeScreenVC: UIViewController {
         let vc = defaults.string(forKey: "viewController")
         let storyBoard : UIStoryboard = UIStoryboard(name: sb!, bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: vc!)
-        if let navigator = navigationController {
-            navigator.pushViewController(newViewController, animated: true)
-        }
+        self.navigationController?.pushViewController(newViewController, animated: true)
+    }
+    
+    @objc func startAdventure() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "InfoStoryBoard", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "InfoScreenVC")
+        self.navigationController?.pushViewController(newViewController, animated: true)
     }
 }
 
