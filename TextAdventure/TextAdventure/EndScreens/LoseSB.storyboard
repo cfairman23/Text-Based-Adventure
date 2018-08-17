@@ -13,7 +13,7 @@
         <!--LoseVC-->
         <scene sceneID="RMr-mp-LWp">
             <objects>
-                <viewController storyboardIdentifier="LoseVC" id="ZyT-cc-GbC" customClass="LoseVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoseVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZyT-cc-GbC" customClass="LoseVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cWl-gW-LeG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

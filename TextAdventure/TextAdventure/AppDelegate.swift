@@ -22,6 +22,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = ["intellect" : 0]
         _ = ["charisma" : 0]
         _ = ["name" : ""]
+        _ = ["storyboard" : "Main"]
+        _ = ["viewController" : "HomeScreenVC"]
+
+        
+//        //define variable strings
+//        var storyBoard = ""
+//        var newViewController = ""
+//        if let storyBoardLoad = UserDefaults.standard.string(forKey: "storyBoard") {
+//            storyBoard = storyBoardLoad // restore and set variables
+//        }
+//        if let newViewControllerLoad = UserDefaults.standard.string(forKey: "newViewController") {
+//            newViewController = newViewControllerLoad
+//        }
+//        
+//        if !(storyBoard == "") && !(newViewController == "") { // check that the string is not empty then set main view controller
+//            let storyboard : UIStoryboard = UIStoryboard(name: storyBoard, bundle: nil)
+//            
+//            let vc : UIViewController = storyboard.instantiateViewController(withIdentifier: newViewController)
+//            self.window?.rootViewController = vc
+//        }
         
         // Override point for customization after application launch.
         return true

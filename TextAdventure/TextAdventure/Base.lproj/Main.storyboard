@@ -28,7 +28,7 @@
         <!--Home ScreenVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeScreenVC" id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--Page1VC-->
         <scene sceneID="aOl-nj-2vx">
             <objects>
-                <viewController id="TQp-zu-V7C" customClass="Page1VC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page1VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TQp-zu-V7C" customClass="Page1VC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mev-0M-r4q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +142,7 @@
         <!--Page2VC-->
         <scene sceneID="kjB-xb-kVB">
             <objects>
-                <viewController id="86R-Ua-5Pe" customClass="Page2VC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page2VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="86R-Ua-5Pe" customClass="Page2VC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="keo-bK-JGq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,7 +190,7 @@
         <!--EscapeVC-->
         <scene sceneID="xEK-Es-vos">
             <objects>
-                <viewController storyboardIdentifier="EscapeVC" id="V7m-A5-8Kb" customClass="EscapeVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EscapeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V7m-A5-8Kb" customClass="EscapeVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ysa-cU-XdE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

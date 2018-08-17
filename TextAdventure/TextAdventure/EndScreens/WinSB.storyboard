@@ -13,7 +13,7 @@
         <!--WinVC-->
         <scene sceneID="Txc-Pa-iBS">
             <objects>
-                <viewController storyboardIdentifier="WinVC" id="eiV-cB-ncD" customClass="WinVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WinVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eiV-cB-ncD" customClass="WinVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="30d-21-bRs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
