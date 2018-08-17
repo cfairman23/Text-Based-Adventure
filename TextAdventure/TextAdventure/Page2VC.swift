@@ -24,13 +24,13 @@ class Page2VC: UIViewController {
     @IBAction func fightButtonWasPressed(_ sender: Any) {
         let strength = defaults.integer(forKey: "strength")
         if (strength < 1) {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let storyBoard: UIStoryboard = UIStoryboard(name: "LoseSB", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoseVC") as! LoseVC
             if let navigator = navigationController {
                 navigator.pushViewController(newViewController, animated: true)
             }
         } else {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let storyBoard: UIStoryboard = UIStoryboard(name: "WinSB", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "WinVC") as! WinVC
             if let navigator = navigationController {
                 navigator.pushViewController(newViewController, animated: true)
