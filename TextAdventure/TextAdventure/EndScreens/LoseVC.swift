@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoseVC.swift
 //  TextAdventure
 //
 //  Created by Connor Fairman on 8/16/18.
@@ -8,21 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    let defaults = UserDefaults.standard
+class LoseVC: UIViewController {
 
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        defaults.set(0, forKey: "strength")
-        defaults.set(0, forKey: "intellect")
-        defaults.set(0, forKey: "charisma")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
+        // Dispose of any resources that can be recreated.
     }
 }
-

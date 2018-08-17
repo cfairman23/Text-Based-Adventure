@@ -1,5 +1,5 @@
 //
-//  EscapeVC.swift
+//  WinVC.swift
 //  TextAdventure
 //
 //  Created by Connor Fairman on 8/16/18.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class EscapeVC: UIViewController {
+class WinVC: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
     }
 
