@@ -23,12 +23,12 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-732" y="133"/>
+            <point key="canvasLocation" x="-1161" y="132"/>
         </scene>
         <!--Home ScreenVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreenVC" id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,16 +47,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TD-J8-Nuq">
+                                <rect key="frame" x="153" y="669" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Resume"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eX0-Am-JSp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="C4a-Pg-srY"/>
                             <constraint firstItem="LT9-3a-MmB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="F0S-1l-Y1B"/>
+                            <constraint firstItem="7TD-J8-Nuq" firstAttribute="top" secondItem="eX0-Am-JSp" secondAttribute="bottom" constant="28" id="KR8-hE-HEn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LT9-3a-MmB" secondAttribute="trailing" constant="92" id="RRm-Ej-8Wk"/>
+                            <constraint firstItem="7TD-J8-Nuq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="V2k-56-GHs"/>
                             <constraint firstItem="eX0-Am-JSp" firstAttribute="top" secondItem="LT9-3a-MmB" secondAttribute="bottom" constant="128" id="W3F-bh-vgc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7TD-J8-Nuq" secondAttribute="trailing" constant="151" id="a55-fA-hKp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eX0-Am-JSp" secondAttribute="bottom" constant="159" id="kU9-xG-Yfp"/>
                             <constraint firstItem="LT9-3a-MmB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="259" id="p6W-ZC-6qI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eX0-Am-JSp" secondAttribute="trailing" constant="167" id="sPK-7I-LX8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7TD-J8-Nuq" secondAttribute="bottom" constant="95" id="xwO-e5-TCv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="133"/>
+            <point key="canvasLocation" x="-222" y="131"/>
         </scene>
         <!--Page1VC-->
         <scene sceneID="aOl-nj-2vx">

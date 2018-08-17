@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = ["strength" : 0]
         _ = ["intellect" : 0]
         _ = ["charisma" : 0]
+        _ = ["name" : ""]
         
         // Override point for customization after application launch.
         return true
