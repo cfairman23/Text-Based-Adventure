@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        _ = UserDefaults.standard
+        _ = ["strength" : 0]
+        _ = ["intellect" : 0]
+        _ = ["charisma" : 0]
+        
         // Override point for customization after application launch.
         return true
     }

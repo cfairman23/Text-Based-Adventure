@@ -87,6 +87,7 @@
                                 <state key="normal" title="Go to gym"/>
                                 <connections>
                                     <action selector="gymButtonWasPressed:" destination="TQp-zu-V7C" eventType="touchUpInside" id="YGi-Hu-UBf"/>
+                                    <segue destination="86R-Ua-5Pe" kind="show" id="g34-ZB-vv4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fz-VA-9FZ">
@@ -94,6 +95,7 @@
                                 <state key="normal" title="Go to library"/>
                                 <connections>
                                     <action selector="libraryButtonWasPressed:" destination="TQp-zu-V7C" eventType="touchUpInside" id="dZB-gy-TcI"/>
+                                    <segue destination="86R-Ua-5Pe" kind="show" id="QmB-1p-Dic"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ub-i5-8hh">
@@ -101,6 +103,7 @@
                                 <state key="normal" title="Go to party"/>
                                 <connections>
                                     <action selector="partyButtonWasPressed:" destination="TQp-zu-V7C" eventType="touchUpInside" id="3Fl-in-zw1"/>
+                                    <segue destination="86R-Ua-5Pe" kind="show" id="DZM-Xr-Azy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,5 +131,56 @@
             </objects>
             <point key="canvasLocation" x="953" y="132"/>
         </scene>
+        <!--Page2VC-->
+        <scene sceneID="kjB-xb-kVB">
+            <objects>
+                <viewController id="86R-Ua-5Pe" customClass="Page2VC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="keo-bK-JGq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Choose Another Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLY-vt-2AS">
+                                <rect key="frame" x="86" y="210" width="202" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHF-a4-a3c">
+                                <rect key="frame" x="170" y="312" width="35" height="30"/>
+                                <state key="normal" title="Fight"/>
+                                <connections>
+                                    <action selector="fightButtonWasPressed:" destination="86R-Ua-5Pe" eventType="touchUpInside" id="N5G-E7-OQG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxr-01-oc1">
+                                <rect key="frame" x="170" y="413" width="30" height="30"/>
+                                <state key="normal" title="Run"/>
+                                <connections>
+                                    <action selector="runButtonWasPressed:" destination="86R-Ua-5Pe" eventType="touchUpInside" id="awK-D2-KqO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OLY-vt-2AS" firstAttribute="top" secondItem="mHt-84-VYN" secondAttribute="top" constant="146" id="IdQ-pY-eGh"/>
+                            <constraint firstItem="bxr-01-oc1" firstAttribute="top" secondItem="LHF-a4-a3c" secondAttribute="bottom" constant="71" id="OcY-zR-b6H"/>
+                            <constraint firstItem="LHF-a4-a3c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mHt-84-VYN" secondAttribute="leading" id="SaK-bY-YBi"/>
+                            <constraint firstItem="OLY-vt-2AS" firstAttribute="centerX" secondItem="LHF-a4-a3c" secondAttribute="centerX" constant="-0.5" id="Sxk-y3-gnv"/>
+                            <constraint firstItem="OLY-vt-2AS" firstAttribute="centerX" secondItem="bxr-01-oc1" secondAttribute="centerX" constant="2" id="ZU7-Vk-aOE"/>
+                            <constraint firstItem="mHt-84-VYN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LHF-a4-a3c" secondAttribute="trailing" id="Zv0-DW-BkQ"/>
+                            <constraint firstItem="LHF-a4-a3c" firstAttribute="top" secondItem="OLY-vt-2AS" secondAttribute="bottom" constant="78" id="ivT-ya-vmq"/>
+                            <constraint firstItem="OLY-vt-2AS" firstAttribute="leading" secondItem="mHt-84-VYN" secondAttribute="leading" constant="86" id="ldI-Ha-jdf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mHt-84-VYN"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="800"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxl-VJ-djc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.8" y="131.33433283358323"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="g34-ZB-vv4"/>
+    </inferredMetricsTieBreakers>
 </document>

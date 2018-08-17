@@ -9,15 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        defaults.set(0, forKey: "strength")
+        defaults.set(0, forKey: "intellect")
+        defaults.set(0, forKey: "charisma")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
 }
 

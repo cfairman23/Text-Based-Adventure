@@ -9,6 +9,8 @@
 import UIKit
 
 class Page1VC: UIViewController {
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,27 +21,27 @@ class Page1VC: UIViewController {
     }
 
     @IBAction func gymButtonWasPressed(_ sender: Any) {
-        UserDefaults.standard.set(1, forKey: "strength")
+        let newStrength = defaults.integer(forKey: "strength") + 1
+        defaults.set(newStrength, forKey: "strength")
     }
     
     @IBAction func libraryButtonWasPressed(_ sender: Any) {
-        UserDefaults.standard.set(1, forKey: "intellect")
+        let newIntellect = defaults.integer(forKey: "intellect") + 1
+        defaults.set(newIntellect, forKey: "intellect")
     }
     
     @IBAction func partyButtonWasPressed(_ sender: Any) {
-        UserDefaults.standard.set(1, forKey: "charisma")
+        let newCharisma = defaults.integer(forKey: "charisma") + 1
+        defaults.set(newCharisma, forKey: "charisma")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if let strength = UserDefaults.standard.object(forKey: "strength") {
-            print(strength)
-        }
-        if let intellect = UserDefaults.standard.object(forKey: "intellect") {
-            print(intellect)
-        }
-        if let charisma = UserDefaults.standard.object(forKey: "charisma") {
-            print(charisma)
-        }
+        let strength = defaults.integer(forKey: "strength")
+        let intellect = defaults.integer(forKey: "intellect")
+        let charisma = defaults.integer(forKey: "charisma")
+        print(strength)
+        print(intellect)
+        print(charisma)
     }
     
 }
