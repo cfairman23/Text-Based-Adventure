@@ -18,4 +18,28 @@ class Page1VC: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
+    @IBAction func gymButtonWasPressed(_ sender: Any) {
+        UserDefaults.standard.set(1, forKey: "strength")
+    }
+    
+    @IBAction func libraryButtonWasPressed(_ sender: Any) {
+        UserDefaults.standard.set(1, forKey: "intellect")
+    }
+    
+    @IBAction func partyButtonWasPressed(_ sender: Any) {
+        UserDefaults.standard.set(1, forKey: "charisma")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let strength = UserDefaults.standard.object(forKey: "strength") {
+            print(strength)
+        }
+        if let intellect = UserDefaults.standard.object(forKey: "intellect") {
+            print(intellect)
+        }
+        if let charisma = UserDefaults.standard.object(forKey: "charisma") {
+            print(charisma)
+        }
+    }
+    
 }

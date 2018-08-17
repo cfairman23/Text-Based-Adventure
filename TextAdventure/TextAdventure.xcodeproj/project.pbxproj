@@ -16,6 +16,7 @@
 		381AE23E21263EC7005FDBB7 /* TextAdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE23D21263EC7005FDBB7 /* TextAdventureTests.swift */; };
 		381AE24921263EC7005FDBB7 /* TextAdventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE24821263EC7005FDBB7 /* TextAdventureUITests.swift */; };
 		381AE2572126404E005FDBB7 /* Page1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE2562126404E005FDBB7 /* Page1VC.swift */; };
+		381AE2592126443B005FDBB7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE2582126443B005FDBB7 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		381AE24821263EC7005FDBB7 /* TextAdventureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAdventureUITests.swift; sourceTree = "<group>"; };
 		381AE24A21263EC7005FDBB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381AE2562126404E005FDBB7 /* Page1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1VC.swift; sourceTree = "<group>"; };
+		381AE2582126443B005FDBB7 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				381AE23121263EC7005FDBB7 /* LaunchScreen.storyboard */,
 				381AE23421263EC7005FDBB7 /* Info.plist */,
 				381AE22C21263EC5005FDBB7 /* TextAdventure.xcdatamodeld */,
+				381AE2582126443B005FDBB7 /* Config.swift */,
 			);
 			path = TextAdventure;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				381AE22821263EC5005FDBB7 /* ViewController.swift in Sources */,
 				381AE22621263EC5005FDBB7 /* AppDelegate.swift in Sources */,
+				381AE2592126443B005FDBB7 /* Config.swift in Sources */,
 				381AE22E21263EC5005FDBB7 /* TextAdventure.xcdatamodeld in Sources */,
 				381AE2572126404E005FDBB7 /* Page1VC.swift in Sources */,
 			);

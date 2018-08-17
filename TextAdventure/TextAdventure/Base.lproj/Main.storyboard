@@ -85,14 +85,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGl-WG-uQw">
                                 <rect key="frame" x="108" y="296" width="159" height="30"/>
                                 <state key="normal" title="Go to gym"/>
+                                <connections>
+                                    <action selector="gymButtonWasPressed:" destination="TQp-zu-V7C" eventType="touchUpInside" id="YGi-Hu-UBf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fz-VA-9FZ">
                                 <rect key="frame" x="115" y="385" width="145" height="30"/>
                                 <state key="normal" title="Go to library"/>
+                                <connections>
+                                    <action selector="libraryButtonWasPressed:" destination="TQp-zu-V7C" eventType="touchUpInside" id="dZB-gy-TcI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ub-i5-8hh">
                                 <rect key="frame" x="90" y="475" width="194" height="30"/>
                                 <state key="normal" title="Go to party"/>
+                                <connections>
+                                    <action selector="partyButtonWasPressed:" destination="TQp-zu-V7C" eventType="touchUpInside" id="3Fl-in-zw1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frT-Z2-NJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="616" y="132"/>
+            <point key="canvasLocation" x="953" y="132"/>
         </scene>
     </scenes>
 </document>
