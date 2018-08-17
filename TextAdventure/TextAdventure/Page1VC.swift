@@ -36,12 +36,6 @@ class Page1VC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let strength = defaults.integer(forKey: "strength")
-        let intellect = defaults.integer(forKey: "intellect")
-        let charisma = defaults.integer(forKey: "charisma")
-        print(strength)
-        print(intellect)
-        print(charisma)
     }
     
 }

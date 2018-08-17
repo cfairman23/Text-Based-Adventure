@@ -17,6 +17,9 @@
 		381AE24921263EC7005FDBB7 /* TextAdventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE24821263EC7005FDBB7 /* TextAdventureUITests.swift */; };
 		381AE2572126404E005FDBB7 /* Page1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE2562126404E005FDBB7 /* Page1VC.swift */; };
 		381AE25B21264C7F005FDBB7 /* Page2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE25A21264C7F005FDBB7 /* Page2VC.swift */; };
+		381AE25D21264F9A005FDBB7 /* LoseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE25C21264F9A005FDBB7 /* LoseVC.swift */; };
+		381AE25F2126501F005FDBB7 /* WinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE25E2126501F005FDBB7 /* WinVC.swift */; };
+		381AE261212652B8005FDBB7 /* EscapeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AE260212652B8005FDBB7 /* EscapeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		381AE24A21263EC7005FDBB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381AE2562126404E005FDBB7 /* Page1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1VC.swift; sourceTree = "<group>"; };
 		381AE25A21264C7F005FDBB7 /* Page2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2VC.swift; sourceTree = "<group>"; };
+		381AE25C21264F9A005FDBB7 /* LoseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseVC.swift; sourceTree = "<group>"; };
+		381AE25E2126501F005FDBB7 /* WinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinVC.swift; sourceTree = "<group>"; };
+		381AE260212652B8005FDBB7 /* EscapeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 				381AE22921263EC5005FDBB7 /* Main.storyboard */,
 				381AE2562126404E005FDBB7 /* Page1VC.swift */,
 				381AE25A21264C7F005FDBB7 /* Page2VC.swift */,
+				381AE25C21264F9A005FDBB7 /* LoseVC.swift */,
+				381AE25E2126501F005FDBB7 /* WinVC.swift */,
+				381AE260212652B8005FDBB7 /* EscapeVC.swift */,
 				381AE22F21263EC7005FDBB7 /* Assets.xcassets */,
 				381AE23121263EC7005FDBB7 /* LaunchScreen.storyboard */,
 				381AE23421263EC7005FDBB7 /* Info.plist */,
@@ -267,7 +276,10 @@
 			files = (
 				381AE22821263EC5005FDBB7 /* ViewController.swift in Sources */,
 				381AE22621263EC5005FDBB7 /* AppDelegate.swift in Sources */,
+				381AE25F2126501F005FDBB7 /* WinVC.swift in Sources */,
+				381AE261212652B8005FDBB7 /* EscapeVC.swift in Sources */,
 				381AE22E21263EC5005FDBB7 /* TextAdventure.xcdatamodeld in Sources */,
+				381AE25D21264F9A005FDBB7 /* LoseVC.swift in Sources */,
 				381AE2572126404E005FDBB7 /* Page1VC.swift in Sources */,
 				381AE25B21264C7F005FDBB7 /* Page2VC.swift in Sources */,
 			);

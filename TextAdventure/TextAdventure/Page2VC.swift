@@ -24,14 +24,26 @@ class Page2VC: UIViewController {
     @IBAction func fightButtonWasPressed(_ sender: Any) {
         let strength = defaults.integer(forKey: "strength")
         if (strength < 1) {
-            print("You lose")
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoseVC") as! LoseVC
+            if let navigator = navigationController {
+                navigator.pushViewController(newViewController, animated: true)
+            }
         } else {
-            print("You win")
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "WinVC") as! WinVC
+            if let navigator = navigationController {
+                navigator.pushViewController(newViewController, animated: true)
+            }
         }
     }
     
     @IBAction func runButtonWasPressed(_ sender: Any) {
-        print("You escaped")
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "EscapeVC") as! EscapeVC
+        if let navigator = navigationController {
+            navigator.pushViewController(newViewController, animated: true)
+        }
     }
     
 }
