@@ -14,10 +14,10 @@ class Page1VC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let storyBoard = self.storyboard?.value(forKey: "name") //get storyboard id
+        let storyboard = self.storyboard?.value(forKey: "name") //get storyboard id
         let newViewController = self.restorationIdentifier //get identifier of view controller
-        UserDefaults.standard.set(storyBoard, forKey: "storyBoard") // save to user defaults
-        UserDefaults.standard.set(newViewController, forKey: "newViewController")
+        UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults
+        UserDefaults.standard.set(newViewController, forKey: "viewController")
     }
 
     override func didReceiveMemoryWarning() {
