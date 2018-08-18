@@ -31,14 +31,24 @@
                                     <segue destination="imL-JS-bIZ" kind="show" id="PXz-FB-cW2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are about to embark on an adventure. Should you choose to accept, press start below." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9k-ct-RKL">
+                                <rect key="frame" x="10" y="140" width="355" height="250"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="h3s-SJ-ke0" firstAttribute="bottom" secondItem="WGQ-IJ-G4J" secondAttribute="bottom" constant="20" id="8mn-qr-eQF"/>
                             <constraint firstItem="h3s-SJ-ke0" firstAttribute="trailing" secondItem="WGQ-IJ-G4J" secondAttribute="trailing" constant="171" id="Mfa-Kz-4Dy"/>
+                            <constraint firstItem="l9k-ct-RKL" firstAttribute="top" secondItem="6Qv-L1-uhw" secondAttribute="bottom" constant="57" id="Tv8-18-k7n"/>
                             <constraint firstItem="WGQ-IJ-G4J" firstAttribute="top" secondItem="6Qv-L1-uhw" secondAttribute="bottom" constant="534" id="ZcU-oz-9LG"/>
                             <constraint firstItem="h3s-SJ-ke0" firstAttribute="bottom" secondItem="6Qv-L1-uhw" secondAttribute="bottom" constant="584" id="aoG-bl-wki"/>
+                            <constraint firstAttribute="trailing" secondItem="l9k-ct-RKL" secondAttribute="trailing" constant="10" id="bUX-Me-8f9"/>
                             <constraint firstItem="WGQ-IJ-G4J" firstAttribute="leading" secondItem="h3s-SJ-ke0" secondAttribute="leading" constant="170" id="dvB-dg-HTP"/>
+                            <constraint firstItem="l9k-ct-RKL" firstAttribute="leading" secondItem="yMP-Ho-dgr" secondAttribute="leading" constant="10" id="eDB-qe-Vde"/>
+                            <constraint firstItem="WGQ-IJ-G4J" firstAttribute="top" secondItem="l9k-ct-RKL" secondAttribute="bottom" constant="227" id="hIQ-4s-PHA"/>
                             <constraint firstItem="6Qv-L1-uhw" firstAttribute="leading" secondItem="h3s-SJ-ke0" secondAttribute="leading" constant="98" id="mjv-Et-AOF"/>
                             <constraint firstItem="6Qv-L1-uhw" firstAttribute="top" secondItem="h3s-SJ-ke0" secondAttribute="top" constant="42" id="swr-ss-Tvv"/>
                             <constraint firstItem="h3s-SJ-ke0" firstAttribute="trailing" secondItem="6Qv-L1-uhw" secondAttribute="trailing" constant="99" id="vNt-ac-wpw"/>

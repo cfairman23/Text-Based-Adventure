@@ -25,9 +25,5 @@ class InfoScreenVC: UIViewController {
         UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults
         let newViewController = self.restorationIdentifier
         UserDefaults.standard.set(newViewController, forKey: "viewController")
-        let sb = defaults.string(forKey: "storyBoard")
-        let vc = defaults.string(forKey: "viewController")
-        print(sb!)
-        print(vc!)
     }
 }
