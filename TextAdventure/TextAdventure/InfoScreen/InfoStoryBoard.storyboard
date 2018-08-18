@@ -28,7 +28,7 @@
                                 <rect key="frame" x="170" y="617" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="imL-JS-bIZ" kind="show" id="PXz-FB-cW2"/>
+                                    <segue destination="cj6-vU-lmc" kind="show" id="ASL-Ib-875"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are about to embark on an adventure. Should you choose to accept, press start below." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9k-ct-RKL">
@@ -66,7 +66,60 @@
                 <viewControllerPlaceholder storyboardName="Chapter1" referencedIdentifier="Page1VC" id="imL-JS-bIZ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTV-mh-zkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757" y="158"/>
+            <point key="canvasLocation" x="1822" y="158"/>
+        </scene>
+        <!--Name ScreenVC-->
+        <scene sceneID="eRj-He-8Ac">
+            <objects>
+                <viewController id="cj6-vU-lmc" customClass="nameScreenVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3df-hk-LpG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4W2-gO-WdJ">
+                                <rect key="frame" x="91" y="318" width="193" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-gh-K0T">
+                                <rect key="frame" x="167" y="546" width="43" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="cj6-vU-lmc" eventType="touchUpInside" id="eKP-nD-qMN"/>
+                                    <segue destination="imL-JS-bIZ" kind="show" id="ZJO-vy-XTs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0v-3O-eGT">
+                                <rect key="frame" x="112" y="202" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4W2-gO-WdJ" firstAttribute="centerX" secondItem="V0v-3O-eGT" secondAttribute="centerX" id="4Yr-Kt-qF0"/>
+                            <constraint firstItem="V0v-3O-eGT" firstAttribute="leading" secondItem="swZ-Cr-ZWQ" secondAttribute="leading" constant="112" id="86w-wV-MvH"/>
+                            <constraint firstItem="swZ-Cr-ZWQ" firstAttribute="bottom" secondItem="V0v-3O-eGT" secondAttribute="bottom" constant="444" id="8yl-eL-Kwv"/>
+                            <constraint firstItem="4W2-gO-WdJ" firstAttribute="leading" secondItem="swZ-Cr-ZWQ" secondAttribute="leading" constant="91" id="C6z-Tv-dle"/>
+                            <constraint firstItem="BvL-gh-K0T" firstAttribute="top" secondItem="4W2-gO-WdJ" secondAttribute="bottom" constant="198" id="GR1-ZW-652"/>
+                            <constraint firstItem="swZ-Cr-ZWQ" firstAttribute="trailing" secondItem="BvL-gh-K0T" secondAttribute="trailing" constant="165" id="HEe-Ex-zyl"/>
+                            <constraint firstItem="swZ-Cr-ZWQ" firstAttribute="trailing" secondItem="V0v-3O-eGT" secondAttribute="trailing" constant="112" id="W9w-Ad-H2w"/>
+                            <constraint firstItem="V0v-3O-eGT" firstAttribute="top" secondItem="swZ-Cr-ZWQ" secondAttribute="top" constant="182" id="cLo-Es-603"/>
+                            <constraint firstItem="BvL-gh-K0T" firstAttribute="leading" secondItem="swZ-Cr-ZWQ" secondAttribute="leading" constant="167" id="sso-XQ-9lb"/>
+                            <constraint firstItem="swZ-Cr-ZWQ" firstAttribute="bottom" secondItem="BvL-gh-K0T" secondAttribute="bottom" constant="85" id="wZA-c1-ogc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="swZ-Cr-ZWQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="4W2-gO-WdJ" id="LSQ-1d-OHG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRw-de-Zcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="158.77061469265368"/>
         </scene>
     </scenes>
 </document>

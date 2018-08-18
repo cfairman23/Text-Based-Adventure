@@ -43,10 +43,12 @@ class HomeScreenVC: UIViewController {
         self.navigationController?.pushViewController(newViewController, animated: true)
     }
     override func viewDidAppear(_ animated: Bool) {
+        let name = defaults.string(forKey: "name")
         let sb = defaults.string(forKey: "storyBoard")
         let vc = defaults.string(forKey: "viewController")
         print(sb!)
         print(vc!)
+        print(name!)
     }
 }
 
