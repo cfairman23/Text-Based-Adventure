@@ -37,7 +37,7 @@ class Page1VC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         let storyboard = self.storyboard?.value(forKey: "name")
-        UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults                
+        UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults
         let newViewController = self.restorationIdentifier
         UserDefaults.standard.set(newViewController, forKey: "viewController")
     }
