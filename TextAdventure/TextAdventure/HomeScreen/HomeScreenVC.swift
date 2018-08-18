@@ -15,11 +15,6 @@ class HomeScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sb = defaults.string(forKey: "storyBoard")
-        let vc = defaults.string(forKey: "viewController")
-        print(sb!)
-        print(vc!)
-        
         NotificationCenter.default.addObserver(self, selector: #selector(self.startAdventure), name: Notification.Name("yesButtonClicked"), object: nil)
     }
 
@@ -49,6 +44,12 @@ class HomeScreenVC: UIViewController {
         let storyBoard : UIStoryboard = UIStoryboard(name: "InfoStoryBoard", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "InfoScreenVC")
         self.navigationController?.pushViewController(newViewController, animated: true)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        let sb = defaults.string(forKey: "storyBoard")
+        let vc = defaults.string(forKey: "viewController")
+        print(sb!)
+        print(vc!)
     }
 }
 

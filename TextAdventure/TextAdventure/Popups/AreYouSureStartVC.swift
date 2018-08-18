@@ -19,11 +19,6 @@ class AreYouSureStartVC: UIViewController {
 
         self.popupView.layer.masksToBounds = true
         self.popupView.layer.cornerRadius = 7
-        
-        let sb = defaults.string(forKey: "storyBoard")
-        let vc = defaults.string(forKey: "viewController")
-        print(sb!)
-        print(vc!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,10 +34,21 @@ class AreYouSureStartVC: UIViewController {
     }
     
     @IBAction func yesClicked(_ sender: Any) {
-        let storyboard = "InfoStoryBoard" //get storyboard id
-        let newViewController = "InfoScreenVC" //get identifier of view controller
-        UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults
-        UserDefaults.standard.set(newViewController, forKey: "viewController")
+        var storyboard = self.storyboard?.value(forKey: "name") {
+            didSet {
+                DispatchQueue.main.async {
+                    UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults
+                }
+            }
+        }
+        var newViewController = self.restorationIdentifier {
+            didSet {
+                DispatchQueue.main.async {
+                    UserDefaults.standard.set(newViewController, forKey: "viewController")
+                }
+            }
+        }
+        UserDefaults.standard.synchronize()
         dismiss(animated: true, completion: nil)
         NotificationCenter.default.post(name: Notification.Name("yesButtonClicked"), object: nil)
     }

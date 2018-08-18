@@ -17,31 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        _ = UserDefaults.standard
-        _ = ["strength" : 0]
-        _ = ["intellect" : 0]
-        _ = ["charisma" : 0]
-        _ = ["name" : ""]
-        _ = ["storyBoard" : "Main"]
-        _ = ["viewController" : "HomeScreenVC"]
-
-        
-//        //define variable strings
-//        var storyBoard = ""
-//        var newViewController = ""
-//        if let storyBoardLoad = UserDefaults.standard.string(forKey: "storyBoard") {
-//            storyBoard = storyBoardLoad // restore and set variables
-//        }
-//        if let newViewControllerLoad = UserDefaults.standard.string(forKey: "newViewController") {
-//            newViewController = newViewControllerLoad
-//        }
-//
-//        if !(storyBoard == "") && !(newViewController == "") { // check that the string is not empty then set main view controller
-//            let storyboard : UIStoryboard = UIStoryboard(name: storyBoard, bundle: nil)
-//
-//            let vc : UIViewController = storyboard.instantiateViewController(withIdentifier: newViewController)
-//            self.window?.rootViewController = vc
-//        }
+        let defaults = UserDefaults.standard
+        if defaults.object(forKey: "storyBoard") == nil && defaults.object(forKey: "viewController") == nil { // you could use any other key that you use in the app
+            defaults.set(0, forKey: "strength")
+            defaults.set(0, forKey: "intellect")
+            defaults.set(0, forKey: "charisma")
+            defaults.set("", forKey: "name")
+            defaults.set("Main", forKey: "storyBoard")
+            defaults.set("HomeScreenVC", forKey: "viewController")
+        }
         
         // Override point for customization after application launch.
         return true

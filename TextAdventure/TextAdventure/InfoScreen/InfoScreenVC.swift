@@ -14,11 +14,6 @@ class InfoScreenVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let sb = defaults.string(forKey: "storyBoard")
-        let vc = defaults.string(forKey: "viewController")
-        print(sb!)
-        print(vc!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,9 +21,13 @@ class InfoScreenVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let storyboard = self.storyboard?.value(forKey: "name") //get storyboard id
-        let newViewController = self.restorationIdentifier //get identifier of view controller
+        let storyboard = self.storyboard?.value(forKey: "name")
         UserDefaults.standard.set(storyboard, forKey: "storyBoard") // save to user defaults
+        let newViewController = self.restorationIdentifier
         UserDefaults.standard.set(newViewController, forKey: "viewController")
+        let sb = defaults.string(forKey: "storyBoard")
+        let vc = defaults.string(forKey: "viewController")
+        print(sb!)
+        print(vc!)
     }
 }

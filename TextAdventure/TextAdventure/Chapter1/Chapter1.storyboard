@@ -97,9 +97,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwl-S1-RS5">
                                 <rect key="frame" x="170" y="369" width="30" height="30"/>
                                 <state key="normal" title="Run"/>
-                                <connections>
-                                    <action selector="runButtonWasPressed:" destination="8hn-Bu-DTp" eventType="touchUpInside" id="afg-Zb-xyN"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,30 +117,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kn5-ef-v6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1728.8" y="131.33433283358323"/>
-        </scene>
-        <!--EscapeVC-->
-        <scene sceneID="Oll-YO-a8a">
-            <objects>
-                <viewController storyboardIdentifier="EscapeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TqX-NJ-OW1" customClass="EscapeVC" customModule="TextAdventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1yA-kq-5j7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Escaped" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vx2-oB-d1E">
-                                <rect key="frame" x="68" y="321" width="239" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="YTW-bD-QLd"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s6c-v2-HCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2517.5999999999999" y="84.107946026986511"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
