@@ -26,12 +26,6 @@ class HomeScreenVC: UIViewController {
         NotificationCenter.default.removeObserver(self, name: Notification.Name("yesButtonClicked"), object: nil)
     }
     
-    @IBAction func startButtonWasPressed(_ sender: Any) {
-        defaults.set(0, forKey: "strength")
-        defaults.set(0, forKey: "intellect")
-        defaults.set(0, forKey: "charisma")
-    }
-    
     @IBAction func resumeButtonWasPressed(_ sender: Any) {
         let sb = defaults.string(forKey: "storyBoard")
         let vc = defaults.string(forKey: "viewController")
@@ -41,6 +35,9 @@ class HomeScreenVC: UIViewController {
     }
     
     @objc func startAdventure() {
+        defaults.set(0, forKey: "strength")
+        defaults.set(0, forKey: "intellect")
+        defaults.set(0, forKey: "charisma")
         let storyBoard : UIStoryboard = UIStoryboard(name: "InfoStoryBoard", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "InfoScreenVC")
         self.navigationController?.pushViewController(newViewController, animated: true)
